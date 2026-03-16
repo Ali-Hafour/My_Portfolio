@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Ahmed Ali | DevOps & Infrastructure Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .project-card:hover { transform: translateY(-8px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .gradient-text { background: linear-gradient(90deg, #2563eb, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .profile-glow { box-shadow: 0 0 20px rgba(37, 99, 235, 0.2); }
+        .skill-pill { transition: all 0.3s ease; border: 1px solid #e2e8f0; }
+        .skill-pill:hover { border-color: #3b82f6; background: #eff6ff; transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-900 leading-relaxed">
+
+    <nav class="sticky top-0 glass z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-black text-blue-600 tracking-tighter text-2xl">AAA<span class="text-slate-400">.</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden bg-white pt-20 pb-32 px-6 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold mb-6 uppercase tracking-widest">
+                    DevOps & Systems Automation
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6">
+                    Ali Ahmed <span class="gradient-text">Ali</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-8 max-w-lg leading-relaxed">
+                    Engineering high-availability systems and automated delivery pipelines. I focus on <span class="font-bold">reliability</span>, <span class="font-bold">scalability</span>, and <span class="font-bold">Developer Experience (DX)</span>.
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm mono">
+                    <a href="https://linkedin.com/in/alihafor-devops2026" target="_blank" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 transition-all flex items-center gap-2 shadow-lg shadow-blue-200">
+                        <i class="fab fa-linkedin"></i> linkedin.connect
+                    </a>
+                    <a href="https://github.com/Ali-Hafour" target="_blank" class="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-slate-800 transition-all flex items-center gap-2 shadow-lg shadow-slate-200">
+                        <i class="fab fa-github"></i> github.sh
+                    </a>
+                </div>
+            </div>
+            
+            <div class="order-1 md:order-2 flex justify-center items-center relative">
+                <div class="relative">
+                    <div class="absolute -inset-4 border-2 border-dashed border-blue-200 rounded-full animate-[spin_20s_linear_infinite]"></div>
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl profile-glow relative z-10">
+                        <img src="https://avatars.githubusercontent.com/u/113039366?s=400&u=e75eed77dd1cc00ec9ca98d54fab03e63dc9f6e9&v=4" 
+                             alt="Ali Ahmed Ali" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute bottom-4 right-4 bg-emerald-500 w-6 h-6 rounded-full border-4 border-white z-20 animate-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <section id="about" class="grid md:grid-cols-3 gap-12">
+            <div>
+                <h2 class="text-xs uppercase tracking-[0.2em] text-blue-600 font-black mb-4">Profile</h2>
+                <h3 class="text-3xl font-bold text-slate-900">About Me</h3>
+            </div>
+            <div class="md:col-span-2 space-y-6">
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    I am a DevOps Engineer specialized in reducing operational friction. By implementing <span class="font-bold text-slate-800">Infrastructure as Code (IaC)</span> and robust <span class="font-bold text-slate-800">CI/CD</span> workflows, I help teams deploy with confidence and scale without manual intervention.
+                </p>
+                <p class="text-slate-500">
+                    My background in computer science allows me to approach infrastructure with a developer's mindset. I believe that automation is about creating stable, self-healing environments.
+                </p>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-center text-blue-600 font-black mb-16">Services & Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm hover:border-blue-500 transition-all group">
+                    <i class="fas fa-layer-group text-blue-600 text-2xl mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-4 italic text-slate-800">Orchestration</h3>
+                    <p class="text-slate-600 text-sm mb-6">Advanced container management using <span class="font-bold text-slate-800">Kubernetes</span> and <span class="font-bold text-slate-800">Docker Compose</span>.</p>
+                </div>
+
+                <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm hover:border-blue-500 transition-all group">
+                    <i class="fas fa-code-branch text-blue-600 text-2xl mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-4 italic text-slate-800">Automation</h3>
+                    <p class="text-slate-600 text-sm mb-6">End-to-end <span class="font-bold text-slate-800">CI/CD Pipelines</span> using GitHub Actions. Automating testing and deployment.</p>
+                </div>
+
+                <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm hover:border-blue-500 transition-all group">
+                    <i class="fas fa-terminal text-blue-600 text-2xl mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold mb-4 italic text-slate-800">Infrastructure</h3>
+                    <p class="text-slate-600 text-sm mb-6">Cloud and On-prem server management. Expertise in <span class="font-bold text-slate-800">Bash Scripting</span> and Linux performance tuning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-blue-600 font-black mb-12 italic">Technical Stack</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fab fa-docker text-blue-500 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">Docker</span>
+                </div>
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fas fa-dharmachakra text-blue-600 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">Kubernetes</span>
+                </div>
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fab fa-git-alt text-orange-600 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">Git</span>
+                </div>
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fab fa-github text-slate-900 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">GitHub</span>
+                </div>
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fab fa-linux text-slate-700 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">Linux Admin</span>
+                </div>
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fas fa-infinity text-blue-500 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">CI/CD</span>
+                </div>
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fab fa-aws text-orange-400 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">AWS</span>
+                </div>
+                <div class="skill-pill bg-white p-4 rounded-2xl flex items-center gap-3">
+                    <i class="fas fa-code text-emerald-500 text-xl"></i>
+                    <span class="font-bold text-sm text-slate-700">Programming</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-blue-600 font-black mb-12 italic text-center">In-Depth Case Studies</h2>
+            <div class="grid gap-12">
+                <div class="project-card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm flex flex-col lg:flex-row">
+                    <div class="lg:w-1/3 bg-slate-900 p-8 flex flex-col justify-between">
+                        <div>
+                            <i class="fas fa-microchip text-blue-500 text-4xl mb-6"></i>
+                            <h3 class="text-2xl font-bold text-white mb-2 italic">Microservices Migration</h3>
+                            <p class="text-slate-400 text-sm">Containerizing legacy structures into scalable units.</p>
+                        </div>
+                    </div>
+                    <div class="p-8 lg:w-2/3">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs font-black uppercase text-blue-600 mb-3 tracking-widest">The Challenge</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">Transitioning high-traffic systems without configuration drift or downtime.</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black uppercase text-blue-600 mb-3 tracking-widest">Tech Implementation</h4>
+                                <p class="text-slate-600 text-sm">• Multi-stage Docker builds<br>• Nginx Reverse Proxy health checks</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-100">
+                            <p class="text-sm font-bold text-slate-800 italic">Impact: Achieved 99.9% availability during deployments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="grid md:grid-cols-2 gap-16">
+            <div class="space-y-12">
+                <h2 class="text-xs uppercase tracking-[0.2em] text-blue-600 font-black mb-8 italic">Professional Experience</h2>
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
+                    <h3 class="font-bold text-xl italic text-slate-800">DevOps Engineer Intern</h3>
+                    <p class="text-slate-500 font-bold text-sm uppercase">Digital Egypt Pioneers (DEPI)</p>
+                    <p class="text-xs mono text-slate-400 my-2">Nov 2025 — Jul 2026</p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <h2 class="text-xs uppercase tracking-[0.2em] text-blue-600 font-black mb-8 italic">Education</h2>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm relative overflow-hidden">
+                    <h3 class="font-bold text-xl italic text-slate-800">Bachelor’s in Computer Science</h3>
+                    <p class="text-slate-500 font-semibold mb-4 text-sm">Modern Academy For Engineering & Tech.</p>
+                    <div class="inline-block bg-blue-50 text-blue-600 px-3 py-1 rounded text-xs font-bold mono mb-4">2022 — 2026</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-slate-900 text-white pt-24 pb-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-6 italic text-blue-400">Let's Build Reliability</h2>
+            <div class="grid md:grid-cols-2 gap-4 mb-16 mono">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <p class="text-blue-400 text-xs mb-2 font-bold uppercase tracking-widest">Email Address</p>
+                    <a href="mailto:Ali.Ahmed2014.702@Gmail.com" class="text-white hover:underline truncate block text-sm">Ali.Ahmed2014.702@Gmail.com</a>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <p class="text-blue-400 text-xs mb-2 font-bold uppercase tracking-widest">WhatsApp / Call</p>
+                    <p class="text-sm">+20 111 175 5215</p>
+                </div>
+            </div>
+            <div class="text-slate-500 text-[10px] mono uppercase tracking-[0.3em]">
+                Ali Ahmed Ali &copy; 2026 / Built for Performance.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
